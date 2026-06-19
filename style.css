@@ -80,7 +80,7 @@ a {
     cursor: pointer;
 }
 
-header nav .navbar ul {
+header nav .navbar > ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
@@ -95,6 +95,7 @@ header nav .navbar ul {
 .navbar {
     display: flex;
     align-items: center;
+    gap: 20px;
     /* flex-grow: 1; */
 }
 
@@ -108,6 +109,20 @@ header nav .navbar ul li a {
 
 header nav .navbar ul li a:hover {
     background-color: #fff;
+}
+
+.menu-icons ul {
+    margin-top: 5px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-icons svg {
+    color: #5a5a5ac4;
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 
@@ -532,4 +547,39 @@ footer {
 
 
 
+}
+
+@media screen and (max-width: 940px) {
+    .navbar {
+        /* gap: 5px; */
+    }
+
+    .navbar > ul {
+        /* gap: 5px; */
+
+    }
+
+    header nav .navbar > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    /* justify-content: space-between; */
+
+}
+
+    .menu-icons ul {
+        /* gap: 5px; */
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    header nav .navbar > ul {
+        display: none;
+    }
+
+    header nav {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
 }
